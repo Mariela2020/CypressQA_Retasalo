@@ -1,0 +1,27 @@
+{
+  "name": "cypressqa_retasalo",
+  "version": "1.0.0",
+  "description": "Pruebas Automatizadas de Retasalo",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run:retasalo": "cypress run --browser chrome --record --key 6f010698-016a-4ee8-a6ac-971a54d7955b"
+  },
+  "keywords": [
+    "QA",
+    "Cucumber",
+    "CI/CD"
+  ],
+  "author": "Mariela Hurtado",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.4.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/features/step_definitions/**/"
+  }
+}

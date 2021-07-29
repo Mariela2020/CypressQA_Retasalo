@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-07-29T21:19:57.425Z",
+    "end": "2021-07-29T21:20:56.168Z",
+    "duration": 58743,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f901664-8c90-4000-9a74-e00f13c27925",
+      "title": "",
+      "fullFile": "cypress/integration/features/retasalo.feature",
+      "file": "cypress/integration/features/retasalo.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52e13a44-e59d-4560-b54f-988568a27afd",
+          "title": "Tasar una Propiedad",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Obtiene un Informe con Credenciales de Administrador",
+              "fullTitle": "Tasar una Propiedad Obtiene un Informe con Credenciales de Administrador",
+              "timedOut": null,
+              "duration": 28231,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '16-16 - ROSAL 379 DP 1 - Santiago' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '16-16 - ROSAL 379 DP 1 - Santiago' but never did.\n    at eval (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:108:8)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:100:22)\n    at Context.resolveAndRunStepDefinition (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:10571:29)\n    at Context.eval (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:9892:35)",
+                "diff": null
+              },
+              "uuid": "21a1799f-2e1e-4b18-8c7e-c094b94009da",
+              "parentUUID": "52e13a44-e59d-4560-b54f-988568a27afd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Obtiene un Informe con Credenciales de particular",
+              "fullTitle": "Tasar una Propiedad Obtiene un Informe con Credenciales de particular",
+              "timedOut": null,
+              "duration": 23455,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .accordion-feat > .collapse > p`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .accordion-feat > .collapse > p`, but never found it.\n    at Context.eval (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:155:61)\n    at Context.resolveAndRunStepDefinition (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:10571:29)\n    at Context.eval (https://www.retasalo.com/__cypress/tests?p=cypress\\integration\\features\\retasalo.feature:9892:35)",
+                "diff": null
+              },
+              "uuid": "1c1687a6-33ab-477f-b027-2d5d7714c4d1",
+              "parentUUID": "52e13a44-e59d-4560-b54f-988568a27afd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "21a1799f-2e1e-4b18-8c7e-c094b94009da",
+            "1c1687a6-33ab-477f-b027-2d5d7714c4d1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51686,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
