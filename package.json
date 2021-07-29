@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
-    "cy:run:retasalo": "cypress run --browser chrome --record --key 6f010698-016a-4ee8-a6ac-971a54d7955b"
+    "cy:run:retasalo": "cypress run --browser chrome --record --key bd006e9e-c2a1-4a63-a17a-35949d625638"
   },
   "keywords": [
     "QA",
@@ -16,10 +16,13 @@
   "author": "Mariela Hurtado",
   "license": "ISC",
   "dependencies": {
+    "@bahmutov/cy-api": "^1.5.0",
     "cypress": "^7.4.0",
     "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-xpath": "^1.6.2",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.2.2",
+    "npm": "^6.14.5",
+    "react-select": "^4.3.1"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/integration/features/step_definitions/**/"
