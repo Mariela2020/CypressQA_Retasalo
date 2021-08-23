@@ -42,6 +42,7 @@ And("Ingresa los credenciales de administrador", (datatable) =>{
     
     cy.get('.contenido > .row > .btn').click()  
     cy.wait(6000)
+    cy.clearCookies()
 
 })
 
@@ -79,12 +80,12 @@ And("Ingresa los credenciales de usuario", (datatable) =>{
 
 And("El sistema muestra el informe", () => {
 
-    cy.get('.dir').should('be.visible') 
-
-   // cy.get('#rut').type('267008469')
-   // cy.get('.btn').click()
-   // cy.wait(3000) 
+ //   cy.get('#rut').type('267008469')
+ //   cy.get('.btn').click()
+ //   cy.wait(3000) 
     
+    cy.get('.dir', {timeout:10000}).should('be.visible') 
+
     cy.get(':nth-child(1) > .accordion-feat > .collapse > p').should('be.visible')
     cy.get(':nth-child(2) > .accordion-feat > .collapse > p').should('be.visible')
     cy.get(':nth-child(3) > .accordion-feat > .collapse > p').should('be.visible')

@@ -20,7 +20,7 @@ Feature: Tasar una Propiedad
          
         When Busca la Propiedad por Rol
             |comuna                    | rol            | direccion                     |
-            |Las Condes                |2431-19         |2431-19 - AV LAS CONDES 12631  |   
+            |Las Condes                |2431-14         |2431-14 - AV LAS CONDES 12631  |   
          And Ingresa los credenciales de usuario 
             |email                     | password       |
             |hurtadomariela2@gmail.com | prueba         |  
