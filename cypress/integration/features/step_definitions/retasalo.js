@@ -48,10 +48,9 @@ And("Ingresa los credenciales de administrador", (datatable) =>{
 
 Then("El sistema valida credenciales y muestra informe", () =>{
     
-    cy.get('.comreg').should('be.visible')
+    cy.get('.comreg', {timeout:10000}).should('be.visible')
 
-    cy.wait(3000)
-    cy.get(':nth-child(1) > .accordion-feat').should('be.visible')
+    cy.get(':nth-child(1) > .accordion-feat', {timeout:5000}).should('be.visible')
     cy.get(':nth-child(2) > .accordion-feat').should('be.visible')
     cy.get(':nth-child(3) > .accordion-feat').should('be.visible')
     cy.get(':nth-child(4) > .accordion-feat').should('be.visible')
